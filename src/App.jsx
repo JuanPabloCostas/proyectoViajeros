@@ -1,4 +1,3 @@
-
 import './App.css'
 import {
   BrowserRouter as Router,
@@ -17,7 +16,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/"/>
           <Route path="/informacionJuanPa" element={<InfromacionJuanPa />} />
           <Route path="/informacionJesus" element={<InformacionJesus />} />
           <Route path="/chiste" element={<h1>JAHAHAHHAHA</h1>} />
