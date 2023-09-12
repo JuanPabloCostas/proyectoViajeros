@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom"
+
 import InfromacionJuanPa from './mainWindows/InfromacionJuanPa'
 import InformacionJesus from './mainWindows/InformacionJesus'
 
@@ -16,7 +17,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/"/>
+          <Route path="/" element={<h1 className='text-blue-400'>Hola 2</h1>}/>
           <Route path="/informacionJuanPa" element={<InfromacionJuanPa />} />
           <Route path="/informacionJesus" element={<InformacionJesus />} />
           <Route path="/chiste" element={<h1>JAHAHAHHAHA</h1>} />
@@ -24,7 +25,7 @@ function App() {
         </Routes>
       </Router>
 
-      <main className='bg-[#2F4858] h-screen w-screen flex items-center justify-center'>
+      {/* <div className='bg-[#2F4858] h-screen w-screen flex items-center justify-center'>
         <div className='bg-[#25639D] h-[90%] w-[100vh] flex flex-col items-center rounded-2xl shadow-lg'>
           <h1 className='text-5xl text-blue-400'>Hola Mundo</h1>
 
@@ -37,7 +38,7 @@ function App() {
           </div>
         </div>
 
-      </main>
+      </div> */}
     </>
   )
 }
