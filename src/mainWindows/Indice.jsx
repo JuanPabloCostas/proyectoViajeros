@@ -6,17 +6,17 @@ import NavBoton from '../components/NavBoton'
 const Indice = () => {
     return (
         <>
-            <main className='bg-[#2F4858] h-screen w-screen flex items-center justify-center'>
+            <main className='bg-[#2F4858] h-screen w-screen flex items-center justify-center text-white font-sans'>
                 <div className='bg-[#25639D] h-[90%] w-[100vh] flex flex-col items-center rounded-2xl shadow-lg gap-y-5'>
                     <img src="/logoViajeros.svg" alt="logo" className='w-[250px] h-[150px]' />
 
-                    <NavBotonImagen href="InformacionJesus" color="#5E78C1" height="100px" width="300px"
-                        textLine1="Movilidad" textLine2="Personalizada" fontSize="25px" textAlign="left"
+                    <NavBotonImagen href="formatomovilidad" color="#5E78C1" height="100px" width="300px"
+                        textLine1="Movilidad" textLine2="Personalizada" fontSize="25px"
                         imageSrc="user.svg" imageAlt="usuario"
                     />
 
                     <NavBotonImagen href="InformacionJuanPa" color="#5E78C1" height="100px" width="300px"
-                        textLine1="Calculadora" textLine2="de Estancia" fontSize="25px" textAlign="left"
+                        textLine1="Calculadora" textLine2="de Estancia" fontSize="25px"
                         imageSrc="calcu.svg" imageAlt="calculadora"
                     />
 
