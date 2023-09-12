@@ -4,8 +4,12 @@ const NavBoton = (props) => {
   return (
     <button 
         onClick={() => window.location.href=props.href}
-        className={`bg-[${props.color}] h-${props.height} width-${props.width}  rounded-full`}>
-            {props.text}
+        style={{ backgroundColor: props.color, height: props.height, width: props.width, fontSize: props.fontSize}}
+        className='flex items-center justify-center rounded-lg font-bold shadow-lg'>
+            <div>
+                <p>{props.textLine1}</p>
+                <p>{props.textLine2}</p>
+            </div>
     </button>
   )
 }
