@@ -1,4 +1,3 @@
-import './App.css'
 import {
   BrowserRouter as Router,
   Route,
@@ -7,6 +6,9 @@ import {
 
 import InfromacionJuanPa from './mainWindows/InfromacionJuanPa'
 import InformacionJesus from './mainWindows/InformacionJesus'
+import Indice from "./mainWindows/Indice"
+
+
 
 
 
@@ -17,7 +19,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<h1 className='text-blue-400'>Hola 2</h1>}/>
+          <Route path="/" element={<Indice />}/>
           <Route path="/informacionJuanPa" element={<InfromacionJuanPa />} />
           <Route path="/informacionJesus" element={<InformacionJesus />} />
           <Route path="/chiste" element={<h1>JAHAHAHHAHA</h1>} />
