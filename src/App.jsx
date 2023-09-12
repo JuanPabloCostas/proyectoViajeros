@@ -23,7 +23,6 @@ function App() {
           <Route path="/" element={<Indice />} />
           <Route path="/formatomovilidad" element={<FormatoMov />} />
           <Route path="/informacionJesus" element={<InformacionJesus />} />
-          <Route path="/chiste" element={<h1>JAHAHAHHAHA</h1>} />
 
         </Routes>
       </Router>
