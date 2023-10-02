@@ -30,8 +30,6 @@ const Indice = () => {
                             textLine1="Info General" textLine2="Mov UAQ" fontSize="25px" textAlign="center"
                         />
                     </div>
-                    <BotonNav href="informacionJesus" texto="Ir a la info de jesus"/>
-
                 </div>
 
             </main>
