@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 
 const FormatoMov = () => {
+  const navigate = useNavigate()
   return (
     <>
       <main className='bg-[#2F4858] h-screen w-screen flex items-center justify-center text-white font-sans'>
@@ -41,8 +43,8 @@ const FormatoMov = () => {
             </select>
           </div>
 
-          <input className='flex items-center justify-left rounded-lg font-bold 
-          shadow-lg cursor-pointer bg-[#5E78C1] w-72 h-32 text-6xl' type="submit" value='Buscar'/>
+          <input onClick={() => navigate("/resultados_mov")} className='flex items-center justify-left rounded-lg font-bold 
+          shadow-lg cursor-pointer bg-[#5E78C1] w-72 h-32 text-6xl' type="submit" value='Buscar' />
 
         </form>
 
