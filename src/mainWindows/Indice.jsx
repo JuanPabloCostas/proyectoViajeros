@@ -18,8 +18,8 @@ const Indice = () => {
                     />
 
                     <NavBotonImagen href="InformacionJuanPa" color="#5E78C1" height="100px" width="300px"
-                        textLine1="Calculadora" textLine2="de Estancia" fontSize="25px"
-                        imageSrc="calcu.svg" imageAlt="calculadora"
+                        textLine1="Tramites" textLine2="Movilidad" fontSize="25px"
+                        imageSrc="folder.svg" imageAlt="calculadora"
                     />
 
                     <div className='flex gap-x-8'>
