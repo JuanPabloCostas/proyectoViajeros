@@ -5,7 +5,7 @@ const NavBotonImagen = (props) => {
     <button 
         onClick={() => window.location.href=props.href}
         style={{ backgroundColor: props.color, columnGap: props.gap}}
-        className='flex items-center  rounded-lg font-bold shadow-lg h-1/5 w-2/4 text-4xl p-4 justify-center'>
+        className='flex items-center  rounded-lg font-bold shadow-lg h-1/4 w-2/4 text-3xl p-3 justify-center '>
             <img src={props.imageSrc} alt={props.imageAlt}
              className='w-1/4 h-[90px]'/>
             <div className='w-3/4' >
