@@ -10,23 +10,21 @@ const Indice = () => {
     return (
         <>
             <FondoPrincipal>
-                <img src="/logoViajeros.svg" alt="logo" className='w-[250px] h-[150px]' />
+                <img src="/logoViajeros.svg" alt="logo" className='h-1/4' />
 
-                <NavBotonImagen href="formatomovilidad" color="#5E78C1" height="100px" width="280px"
-                    textLine1="Movilidad" textLine2="Personalizada" fontSize="25px"
-                    imageSrc="user.svg" imageAlt="usuario"
+                <NavBotonImagen href="formatomovilidad" color="#5E78C1" textLine1="Movilidad" textLine2="Personalizada"  
+                imageSrc="user.svg" imageAlt="usuario" gap='10px'
                 />
 
-                <NavBotonImagen href="login" color="#5E78C1" height="100px" width="280px"
-                    textLine1="Tramites" textLine2="Movilidad" fontSize="25px"
-                    imageSrc="folder.svg" imageAlt="folder"
+                <NavBotonImagen href="login" color="#5E78C1" textLine1="Tramites" textLine2="Movilidad" 
+                imageSrc="folder.svg" imageAlt="folder" gap='10px'
                 />
 
-                <div className='flex gap-x-8'>
-                    <NavBoton href="InformacionJuanPa" color="#C74B53" height="80px" width="200px"
+                <div className='flex gap-x-8 h-1/4 w-full p-4 justify-center'>
+                    <NavBoton href="InformacionJuanPa" color="#C74B53"
                         textLine1="Dept de Mov" textLine2="Informática" fontSize="25px" textAlign="center"
                     />
-                    <NavBoton href="InformacionJuanPa" color="#C74B53" height="80px" width="200px"
+                    <NavBoton href="InformacionJuanPa" color="#C74B53" 
                         textLine1="Info General" textLine2="Mov UAQ" fontSize="25px" textAlign="center"
                     />
                 </div>
