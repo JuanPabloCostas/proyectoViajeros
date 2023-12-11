@@ -1,35 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router'
 import FondoPrincipal from '../components/FondoPrincipal'
-import axios from 'axios'
 
 const FormatoMov = () => {
   const navigate = useNavigate()
-  const [data, setdata] = useState({
-    modo: '1',
-    pais: '1'
-  });
-
-  const [paises, setPaises] = useState({});
-
-  // fetch paises from route http://127.0.0.1:3000/paises/paisesnombre
-  useEffect(() => {
-    const fetchPaises = async () => {
-      try {
-        const res = await axios.get('http://127.0.0.1:3000/paises/paisesnombre')
-        setPaises(res.data)
-        // row example: {id: 1, nombre: "Afganistán"}
-      } catch (error) {
-        console.log(error)
-      }
-    }
-    fetchPaises()
-  }
-    , [])
-
-
-
-
   return (
     <FondoPrincipal>
       <p className='text-6xl font-bold mt-8'>Formato Movilidad</p>
@@ -69,31 +43,15 @@ const FormatoMov = () => {
         <div className='flex items-center gap-x-48'>
           <select name="" id="" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
-            style={{ width: '180px', height: '45px' }}
-            onChange={(e) => {
-              setdata({
-                ...data,
-                modo: e.target.value
-              })
-            }
-            }>
+            style={{ width: '180px', height: '45px' }}>
             <option value="1">Presencial</option>
             <option value="2">Virtual</option>
           </select>
           <select name="pais" id="pais" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
-            style={{ width: '180px', height: '45px' }}
-            onChange={(e) => {
-              setdata({
-                ...data,
-                pais: e.target.value
-              })
-            }
-            }
-            >
-            {Object.keys(paises).map((key) => {
-              return <option key={key} value={paises[key].id}>{paises[key].nombre}</option>
-            })}
+            style={{ width: '180px', height: '45px' }}>
+            <option value="1">1</option>
+            <option value="2">2</option>
           </select>
         </div>
 
