@@ -20,9 +20,6 @@ const Indice = () => {
                 />
 
                 <div className='flex gap-x-8 h-1/4 w-full p-4 justify-center'>
-                    <NavBoton href="InformacionJuanPa" color="#C74B53"
-                        textLine1="Dept de Mov" textLine2="Informática" fontSize="25px" textAlign="center"
-                    />
                     <NavBoton href="InformacionJuanPa" color="#C74B53" 
                         textLine1="Info General" textLine2="Mov UAQ" fontSize="25px" textAlign="center"
                     />
