@@ -2,8 +2,15 @@ import React from 'react'
 import { useNavigate } from 'react-router'
 import FondoPrincipal from '../components/FondoPrincipal'
 
+
 const FormatoMov = () => {
   const navigate = useNavigate()
+
+  const handleButtonClick = () => {
+    const selectedPais = document.getElementById('pais').value;
+    navigate(`/resultados_mov?pais=${selectedPais}`);
+  };
+
   return (
     <FondoPrincipal>
       <p className='text-6xl font-bold mt-8'>Formato Movilidad</p>
@@ -50,13 +57,32 @@ const FormatoMov = () => {
           <select name="pais" id="pais" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
             style={{ width: '180px', height: '45px' }}>
-            <option value="1">1</option>
-            <option value="2">2</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Australia">Australia</option>
+            <option value="Bélgica">Bélgica</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Chile">Chile</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="España">España</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Francia">Francia</option>
+            <option value="Italia">Italia</option>
+            <option value="Letonia">Letonia</option>
+            <option value="México">Perú</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Suiza">Suiza</option>
           </select>
         </div>
-
-        <input onClick={() => navigate("/resultados_mov")} className='flex items-center justify-center rounded-lg font-bold 
-          shadow-lg cursor-pointer bg-[#5E78C1] w-72 h-31 text-5xl' type="submit" value='Buscar' />
+        
+         <input
+        onClick={handleButtonClick}
+        className='flex items-center justify-center rounded-lg font-bold shadow-lg cursor-pointer bg-[#5E78C1] w-72 h-31 text-5xl'
+        type="button"
+        value='Buscar'
+      />
 
       </form>
     </FondoPrincipal>

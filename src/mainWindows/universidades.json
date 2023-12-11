@@ -1,0 +1,479 @@
+{
+    "Universidades":[
+    
+      {
+        "nombre": "SRH Berlin university of applied sciences",
+        "pais": "Alemania",
+        "carreras":[
+          "Computer science",
+          "Web development"
+        ]
+      },
+
+    {
+      "nombre": "UNCUYO",
+      "pais": "Argentina",
+      "carreras":[
+        "Lic. en Computación"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Nacional del Rosario",
+      "pais": "Argentina",
+      "carreras":[
+        "Licenciatura en ciencias de la computación"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Nacional del luján",
+      "pais": "Argentina",
+      "carreras":[
+        "Licenciatura en Sistemas de Información"
+      ]
+    },
+
+    {
+      "nombre": "UNTREF",
+      "pais": "Argentina",
+      "carreras":[
+        "Licenciatura en Estadística y Ciencias de Datos"
+        
+      ]
+    },
+
+    {
+      "nombre": "Flinders University",
+      "pais": "Australia",
+      "carreras":[
+        "Bachelor of Computer Science (Artificial Intelligence) (Honours)",
+        "Bachelor of Design and Technology (Honours) ",
+        "Bachelor of Information Technology (Business and Information Systems) (Honours)",
+        "Bachelor of Information Technology (Network and Cybersecurity Systems) (Honours)"
+      ]
+    },
+
+    {
+      "nombre": "Haute Ecole Libre de Bruxelles",
+      "pais": "Bélgica",
+      "carreras":[
+        "Computer science: application development",
+        "Applied electronics"
+      ]
+    },
+
+    {
+      "nombre": "Universidade Estadual de Londrina",
+      "pais": "Brasil",
+      "carreras":[
+        "Computer Science"
+      ]
+    },
+
+    {
+      "nombre": "Pontifícia Universidade Católica de Goiás",
+      "pais": "Brasil",
+      "carreras":[
+        "",
+        ""
+      ]
+    },
+
+    {
+      "nombre": "Universidade Paulista",
+      "pais": "Brasil",
+      "carreras":[
+        "Systems Analysis and Development",
+        "Computer Science",
+        "Computer Engineering",
+        "Information Technology Management",
+        "Private Security Management",
+        "Digital Games",
+        "Computer Networks",
+        "Information Systems"
+      ]
+    },
+
+    {
+      "nombre": "Corporación Universitaria Empresarial Alexander Von Humbold",
+      "pais": "Colombia",
+      "carreras":[
+        "Ingeniería de Software "
+      ]
+    },
+
+    {
+      "nombre": "Universidad del Cauca",
+      "pais": "Colombia",
+      "carreras":[
+        "Ingeniería Electrónica y Telecomunicaciones ",
+        "Ingeniería de Sistemas"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Antioquía",
+      "pais": "Colombia",
+      "carreras":[
+        "Ingeniera de Sistemas",
+        "Ingeniera de Telecomunicaciones"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Medellín ",
+      "pais": "Colombia",
+      "carreras":[
+        "Ingeniería en Sistemas"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Distrital Francisco José de Caldas",
+      "pais": "Colombia",
+      "carreras":[
+        " Ingeniería de Sistemas"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Pedagógica y Tecnológica de Colombia",
+      "pais": "Colombia",
+      "carreras":[
+        "ingeniería de Sistemas y Computación"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Sergio Arboledas",
+      "pais": "Colombia",
+      "carreras":[
+        "Ciencias de la Computación e Inteligencia Artificial"
+      ]
+    },
+
+    {
+      "nombre": "UNISARC",
+      "pais": "Colombia",
+      "carreras":[
+        "Ingeniería de Sistemas"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Pontificia Bolivariana- Montería",
+      "pais": "Colombia",
+      "carreras":[
+        "Ingeniería de Sistemas e Informática",
+        "Ingeniería en Ciencia de Datos"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de los Llanos",
+      "pais": "Colombia",
+      "carreras":[
+        "ingeniería de Sistemas"
+      ]
+    },
+
+    {
+      "nombre": "Fundación Universitaria del Área Andina",
+      "pais": "Colombia",
+      "carreras":[
+        "Ingeniería de Sistemas"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Investigación y Desarrollo",
+      "pais": "Colombia",
+      "carreras":[
+        "Ingeniera de Sistemas"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de las Américas",
+      "pais": "Chile",
+      "carreras":[
+        "Ingeniería de Ejecución Informática",
+        "Ingeniería en Ciberseguridad "
+      ]
+    },
+
+    {
+      "nombre": "Universidad UNIACC",
+      "pais": "Chile",
+      "carreras":[
+        "Ingeniería Informática Multimedia",
+        "Ingeniería Informática Multimedia Advance"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Tarapacá",
+      "pais": "Chile",
+      "carreras":[
+        "Ingeniería Civil en Computación e Informática",
+        "Ingeniería en Ciencia de Datos"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Valparaiso",
+      "pais": "Chile",
+      "carreras":[
+        "Ingeniería en Estadística y Ciencia de Datos"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Cuenca",
+      "pais": "Ecuador",
+      "carreras":[
+        "computacion"
+      ]
+    },
+
+    {
+      "nombre": "Escuela Politécnica Nacional",
+      "pais": "Ecuador",
+      "carreras":[
+        "software",
+        "tecnologías de la información",
+        "Tecnología superior en desarrollo de software"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Oviedo",
+      "pais": "España",
+      "carreras":[
+        "Doble Grado en Ingeniería Informática del Software / Grado en Matemáticas",
+        "Grado en Ciencia e Ingeniería de Datos",
+        "Grado en Ingeniería Informática en Tecnologías de la Información"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Autónoma de Madrid",
+      "pais": "España",
+      "carreras":[
+        "Ingeniria informática y matemáticas",
+        "ciencia e ingenieria de datos",
+        "ingeniría informática"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Complutense de Madrid",
+      "pais": "España",
+      "carreras":[
+        "Ingeniería de Computadores",
+        "Ingeniería del Software",
+        "Ingeniería Informática (ofrece un grupo en inglés) Plan 2019"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Salamanca",
+      "pais": "España",
+      "carreras":[
+        "Titulación de Grado en Ingeniería Informática de Sistemas de Información y en Información y Documentación",
+        "Grado en Ingeniería Informática",
+        "Grado en Ingeniería Informática en Sistemas de Información"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Valladolid",
+      "pais": "España",
+      "carreras":[
+        " titulación de Grado en Ingeniería de Tecnologías de Telecomunicación y Grado en Administración y Dirección de Empresas",
+        "Grado en Ingeniería Informática",
+        "Grado en Ingeniería de Tecnologías de Telecomunicación"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Politécnica de Valencia",
+      "pais": "España",
+      "carreras":[
+        "Bachelor's Degree in Data Science",
+        "Bachelor's Degree in Informatics Engineering",
+        "Bachelor's Degree in Interactive Technologies"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Rovira i Virgili",
+      "pais": "España",
+      "carreras":[
+        "Bachelor's Degree in Computer Engineering",
+        "Double Degree in Computer Engineering and in Biotechnology"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Politécnica de Cartagena",
+      "pais": "España",
+      "carreras":[
+        "Grado en Ingeniería en Sistemas de Telecomunicación",
+        "Grado en Ciencia e Ingeniería de Datos"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Granada",
+      "pais": "España",
+      "carreras":[
+        "Graduado/a en Ingeniería Informática"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Politécnica de Madrid",
+      "pais": "España",
+      "carreras":[
+        "Ingeniería en Informática"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Barcelona",
+      "pais": "España",
+      "carreras":[
+        "Grado en Ciencia e Ingeniería de Datos",
+        "Grado en Ingeniería Informática en Tecnologías de la Información"
+      ]
+    },
+    {
+      "nombre": "Hope College",
+      "pais": "Estados Unidos",
+      "carreras":[
+        "Computer Science"
+      ]
+    },
+    {
+      "nombre": "Universidad de Nantes",
+      "pais": "Francia",
+      "carreras":[
+      "Licenciatura en Estadística y Ciencias de Datos",
+        "Ingeniería del Software"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de Poitiers",
+      "pais": "Francia",
+      "carreras":[
+        "mathematics and Computer science"
+      ]
+    },
+
+    {
+      "nombre": "Aix Marseille Université ",
+      "pais": "Francia",
+      "carreras":[
+        "software engineering"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Savoie Mont Blanc",
+      "pais": "Francia",
+      "carreras":[
+        "software engineering",
+        "data science"
+      ]
+    },
+
+    {
+      "nombre": "Université Toulouse Jean Jaurés",
+      "pais": "Francia",
+      "carreras":[
+        "Ingeniería de Computadores",
+        "Ingeniería del Software"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de los Estudios de Perugia",
+      "pais": "Italia",
+      "carreras":[
+        "Computer science"
+      ]
+    },
+
+    {
+      "nombre": "",
+      "pais": "Letonia",
+      "carreras":[
+        "smart electronics systems"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Nacional del Centro de Perú",
+      "pais": "Perú",
+      "carreras":[
+        "Licenciatura en Sistemas de Información"
+      ]
+    },
+
+    {
+      "nombre": "Universidad César Vallejo, Trujillo",
+      "pais": "Perú",
+      "carreras":[
+        "Ingeniería en Ciencia de Datos",
+        "Ingeniería en Ciberseguridad"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Nacional Mayor de San Marcos",
+      "pais": "Perú",
+      "carreras":[
+        "Escuela Profesional de Ingeniería de Sistemas",
+        " Escuela Profesional de Ingeniería de Software"
+      ]
+    },
+
+    {
+      "nombre": "Universidad Autónoma de Lisboa",
+      "pais": "Portugal",
+      "carreras":[
+        "Computer Engineering",
+        " Escuela Profesional de Ingeniería de Software"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de la República",
+      "pais": "Uruguay",
+      "carreras":[
+        "Ingeniería en Computación",
+        "Ingeniería en Sistemas de Comunicación"
+      ]
+    },
+
+    {
+      "nombre": "Universidad de la República Oriental de Uruguay",
+      "pais": "Uruguay",
+      "carreras":[
+        "Ingeniería Electrónica y Telecomunicaciones ",
+        "Ingeniería de Sistemas"
+      ]
+    },
+
+    {
+      "nombre": "Universitat Bern",
+      "pais": "Suiza",
+      "carreras":[
+        "Computer Science"
+      ]
+    }
+    ]
+  }
