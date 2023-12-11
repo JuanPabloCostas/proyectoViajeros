@@ -3,7 +3,6 @@ import { Navigate, useNavigate } from 'react-router-dom'
 import FondoPrincipal from '../components/FondoPrincipal'
 import NavBotonImagen from '../components/NavBotonImagen'
 import NavBoton from '../components/NavBoton'
-import BotonNav from '../components/BotonNav'
 
 
 const Indice = () => {
