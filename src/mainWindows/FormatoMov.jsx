@@ -12,7 +12,7 @@ const FormatoMov = () => {
           <label className='font-bold w-1/2 text-center'>Carrera</label>
           <label className='font-bold w-1/2 text-center'>Semestre</label>
         </div>
-        <div className='flex items-center justify-center w-full gap-x-28'>
+        <div className='flex items-center justify-center w-full gap-x-48'>
           <select name="" id="" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
             style={{ width: '180px', height: '45px' }}>
@@ -40,18 +40,33 @@ const FormatoMov = () => {
           <label className='font-bold w-1/2 text-center'>País</label>
         </div>
 
-        <div className='flex items-center gap-x-28'>
+        <div className='flex items-center gap-x-48'>
           <select name="" id="" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
             style={{ width: '180px', height: '45px' }}>
             <option value="1">Presencial</option>
             <option value="2">Virtual</option>
           </select>
-          <select name="" id="" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
+          <select name="pais" id="pais" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
             style={{ width: '180px', height: '45px' }}>
-            <option value="1">1</option>
-            <option value="2">2</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Australia">Australia</option>
+            <option value="Bélgica">Bélgica</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Chile">Chile</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="España">España</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Francia">Francia</option>
+            <option value="Italia">Italia</option>
+            <option value="Letonia">Letonia</option>
+            <option value="México">Perú</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Suiza">Suiza</option>
           </select>
         </div>
 
