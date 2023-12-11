@@ -8,9 +8,9 @@ function Navbar() {
           <p> y Enlace Global UAQ</p>
         </div>
         <div className='flex items-center justify-center gap-x-4 text-white'>
-          <p className='text-4xl font-bold'>Archivos</p>
+          <button className='text-4xl font-bold'>Archivos</button>
           <div className='w-1 h-16 border-l border-dotted border-white'></div>
-          <p className='text-4xl font-bold'>Estátus Solicitud</p>
+          <button className='text-4xl font-bold'>Estátus Solicitud</button>
         </div>
     </nav>
   )
