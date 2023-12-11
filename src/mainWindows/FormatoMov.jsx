@@ -38,7 +38,7 @@ const FormatoMov = () => {
           <label className='font-bold w-1/2 text-center'>Carrera</label>
           <label className='font-bold w-1/2 text-center'>Semestre</label>
         </div>
-        <div className='flex items-center justify-center w-full gap-x-28'>
+        <div className='flex items-center justify-center w-full gap-x-48'>
           <select name="" id="" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
             style={{ width: '180px', height: '45px' }}>
@@ -66,7 +66,7 @@ const FormatoMov = () => {
           <label className='font-bold w-1/2 text-center'>País</label>
         </div>
 
-        <div className='flex items-center gap-x-28'>
+        <div className='flex items-center gap-x-48'>
           <select name="" id="" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
             style={{ width: '180px', height: '45px' }}
@@ -80,7 +80,7 @@ const FormatoMov = () => {
             <option value="1">Presencial</option>
             <option value="2">Virtual</option>
           </select>
-          <select name="" id="" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
+          <select name="pais" id="pais" className='flex items-center justify-center rounded-lg font-bold w-30 shadow-inner
             text-black text-center text-lg'
             style={{ width: '180px', height: '45px' }}
             onChange={(e) => {
