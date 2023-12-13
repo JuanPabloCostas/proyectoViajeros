@@ -73,7 +73,7 @@ const Login = () => {
               password: e.target.value
             })
           }} className=' w-80 h-16 rounded-lg text-black text-center shadow-inner'/>
-          <input onClick={goMain} className='flex items-center justify-left rounded-lg font-bold 
+          <input onClick={goMain} className='flex items-center justify-left text-center rounded-lg font-bold 
             shadow-lg cursor-pointer bg-[#5E78C1] w-60 h-16 text-4xl'  value='Entrar' />
         </form>
       </FondoPrincipal>}

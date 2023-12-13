@@ -20,7 +20,7 @@ export const ChecarSolicitudes = () => {
     }, []);
 
     return (
-        <div className='w-screen flex flex-col justify-center align-middle'>
+        <div className='w-screen flex flex-col justify-center items-center'>
             <h1 className='text-center text-5xl m-8'> Checar solicitudes</h1>
 
             {/* map data in a table */}
@@ -35,7 +35,7 @@ export const ChecarSolicitudes = () => {
             {/* Download buttons for file1, file2 and file3 each*/}
             {/* Instead of status, 2 columns with a green or red button */}
 
-            <table className='text-center items-center w-3/4'>
+            <table className='text-center items-center justify-center w-3/4'>
                 <thead>
                     <tr>
                         <th>Expediente</th>
@@ -51,16 +51,16 @@ export const ChecarSolicitudes = () => {
                         <>
                         {row.status == 0 && <tr>
                             <td>{row.expediente}</td>
-                            <td><a href={`http://localhost:8000/${row.file1}`} target="_blank"><img className='w-auto' src={img} alt="download" /></a></td>
-                            <td><a href={`http://localhost:8000/${row.file2}`} target="_blank"><img src={img} alt="download" /></a></td>
-                            <td><a href={`http://localhost:8000/${row.file3}`} target="_blank"><img src={img} alt="download" /></a></td>
-                            <td><button onClick={async(e) => {
+                            <td className='text-center'><a href={`http://localhost:8000/${row.file1}`} target="_blank"><img src={img} alt="download" className='mx-auto'/></a></td>
+                            <td className='text-center'><a href={`http://localhost:8000/${row.file2}`} target="_blank"><img src={img} alt="download" className='mx-auto'/></a></td>
+                            <td className='text-center'><a href={`http://localhost:8000/${row.file3}`} target="_blank"><img src={img} alt="download" className='mx-auto'/></a></td>
+                            <td ><button className='rounded bg-lime-600 shadow-lg w-20' onClick={async(e) => {
                                 e.preventDefault();
                                 const response = await axios.put(`http://127.0.0.1:3000/solicitudes/status/${row.expediente}`, {status: 1});
                                 alert('Solicitud aceptada');
                                 console.log(response);
                             }}>Aceptar</button></td>
-                            <td><button onClick={async(e) => {
+                            <td><button className='rounded bg-red-600 shadow-lg w-20' onClick={async(e) => {
                                 e.preventDefault();
                                 const response = await axios.put(`http://127.0.0.1:3000/solicitudes/status/${row.expediente}`, {status: 2});
                                 alert('Solicitud rechazada');
