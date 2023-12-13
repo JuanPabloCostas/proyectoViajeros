@@ -1,13 +1,12 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-
+// Componente funcional EstatusSolicitud
 function EstatusSolicitud({expediente}) {
 
     const [status, setstatus] = useState(5);
 
-
-    //Función de fetch para obtener el estatus de la solicitud
+    // Función de fetch para obtener el estatus de la solicitud
     useEffect(() => {
       const checkIfFormSubmitted = async () => {
         try {
@@ -26,6 +25,7 @@ function EstatusSolicitud({expediente}) {
         
     }
     , []);
+
   return (
     <div  className='w-screen flex flex-col justify-center'>
         <p className='text-center text-6xl'>Estatus Solicitud</p>
@@ -33,7 +33,7 @@ function EstatusSolicitud({expediente}) {
         {status == 1 && <p className='text-center text-9xl'>Aprobada</p>}
         {status == 2 && <p className='text-center text-9xl'>Rechazada</p>}
         {status == 5 && <p className='text-center text-9xl'>No has enviado tu solicitud</p>}
-        </div>
+    </div>
   )
 }
 

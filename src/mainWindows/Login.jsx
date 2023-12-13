@@ -7,20 +7,27 @@ import axios from 'axios'
 import { MainHome } from './AdminHome'
 import TramitesHome from './TramitesHome'
 
+// Componente de inicio de sesión
 const Login = () => {
+  // Estado para almacenar los valores del formulario
   const [value, setValue] = useState({
     expediente: '',
     password: ''
   });
 
+  // Estado para almacenar el usuario
   const [usuario, setusuario] = useState("usuario");
 
+  // Estado para controlar la visualización de los componentes
   const [show, setshow] = useState(0);
 
+  // Función para redirigir al componente principal
   const goMain = async() => {
     try {
+      // Realizar una solicitud GET a la API para obtener los datos del usuario
       const res = await axios.get(`http://127.0.0.1:3000/alumnos/${value.expediente}`)
-      // console.log(res.data)
+      
+      // Verificar si la contraseña es correcta y el tipo de usuario
       if (res.data.password == value.password && res.data.type != 1) {
         setusuario({
           usuario: res.data.nombre,
@@ -29,6 +36,7 @@ const Login = () => {
         setshow(1);
       }
 
+      // Si el usuario es de tipo administrador
       else if (res.data.password == value.password && res.data.type == 1) {
         setusuario({
           usuario: res.data.nombre,
@@ -44,11 +52,9 @@ const Login = () => {
     }
   }
 
-  
-
   return (
     <>
-      {/* login */}
+      {/* Componente de inicio de sesión */}
       {show == 0 && <FondoPrincipal>
         <p className='text-6xl font-bold mt-10'>Inicio de Sesión</p>
         <form className='h-2/3 w-full flex flex-col items-center justify-center rounded-2xl gap-y-4 m-4 text-center' action="" method="post">
@@ -71,9 +77,9 @@ const Login = () => {
             shadow-lg cursor-pointer bg-[#5E78C1] w-60 h-16 text-4xl'  value='Entrar' />
         </form>
       </FondoPrincipal>}
-      {/* main */}
+      {/* Componente principal */}
       {show == 1 && <TramitesHome usuario={usuario}/>}
-      {/* admin */}
+      {/* Componente de administrador */}
       {show == 2 && <MainHome usuario={usuario}/>}
     </>
   )

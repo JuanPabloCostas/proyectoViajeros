@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Definición del componente Navbar
 function Navbar({ onButtonClick }) {
     return (
         <nav className='bg-[#25639D] h-24 w-screen flex items-center justify-between px-4'>
@@ -20,4 +21,5 @@ function Navbar({ onButtonClick }) {
     );
 }
 
+// Exportación del componente Navbar
 export default Navbar;

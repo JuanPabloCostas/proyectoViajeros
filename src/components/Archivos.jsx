@@ -10,18 +10,22 @@ function Archivos({expediente}) {
 
   const [show, setshow] = useState(true);
 
+  // Función para manejar el cambio del archivo 1
   const handleFile1Change = (e) => {
     setFile1(e.target.files[0]);
   };
 
+  // Función para manejar el cambio del archivo 2
   const handleFile2Change = (e) => {
     setFile2(e.target.files[0]);
   };
 
+  // Función para manejar el cambio del archivo 3
   const handleFile3Change = (e) => {
     setFile3(e.target.files[0]);
   };
 
+  // Función para enviar el formulario
   const submitForm = async () => {
     const formData = new FormData();
     formData.append('file1', file1);
@@ -34,7 +38,7 @@ function Archivos({expediente}) {
         body: formData,
       });
 
-      // Handle the response from the server as needed
+      // Manejar la respuesta del servidor según sea necesario
       console.log('Server response:', response);
       alert('Archivos subidos correctamente');
     } catch (error) {
@@ -42,10 +46,8 @@ function Archivos({expediente}) {
     }
   };
 
-  // Check if form has been submitted before by this user
-
+  // Verificar si el formulario ha sido enviado previamente por este usuario
   useEffect(() => {
-    
     const checkIfFormSubmitted = async () => {
       try {
         const response = await axios.get(`http://127.0.0.1:3000/solicitudes/${expediente}`);
@@ -58,46 +60,39 @@ function Archivos({expediente}) {
       } catch (error) {
         console.error(error);
       }
-
     };
     checkIfFormSubmitted();
-      
-  }
-  , []);
-
-  
+  }, []);
 
   return (
     <div className='w-screen flex flex-col justify-center align-middle'>
-      
       <p className='text-center text-6xl'>Archivos</p>
       <form action="" method="post">
-
-      <table className='w-3/4 mx-auto text-center'>
-        <thead>
-          <tr className='border-b-2 border-[#767676]'>
-            <th className='w-1/2 border-r-2 border-[#767676]'>Documento</th>
-            <th className='w-1/2'>Envio</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className='w-1/2'>Cuadro de homologación</td>
-            <td>
-              <input
-                name='file1'
-                id='file1'
-                type='file'
-                // accept='.pdf'
-                onChange={handleFile1Change}
-              />
-            </td>
-          </tr>
-          <tr>
-            <td className='w-1/2'>Certificado de Lengua</td>
-            <td>
-              <input
-                name='file2'
+        <table className='w-3/4 mx-auto text-center'>
+          <thead>
+            <tr className='border-b-2 border-[#767676]'>
+              <th className='w-1/2 border-r-2 border-[#767676]'>Documento</th>
+              <th className='w-1/2'>Envio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className='w-1/2'>Cuadro de homologación</td>
+              <td>
+                <input
+                  name='file1'
+                  id='file1'
+                  type='file'
+                  // accept='.pdf'
+                  onChange={handleFile1Change}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td className='w-1/2'>Certificado de Lengua</td>
+              <td>
+                <input
+                  name='file2'
                 id='file2'
                 type='file'
                 // accept='.pdf'

@@ -1,11 +1,12 @@
-import React from 'react'
-import { useNavigate } from 'react-router'
-import FondoPrincipal from '../components/FondoPrincipal'
+import React from 'react';
+import { useNavigate } from 'react-router';
+import FondoPrincipal from '../components/FondoPrincipal';
 
-
+// Componente principal
 const FormatoMov = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
+  // Maneja el evento de clic en el botón de búsqueda
   const handleButtonClick = () => {
     const selectedPais = document.getElementById('pais').value;
     navigate(`/resultados_mov?pais=${selectedPais}`);
@@ -77,17 +78,15 @@ const FormatoMov = () => {
           </select>
         </div>
         
-         <input
-        onClick={handleButtonClick}
-        className='flex items-center justify-center rounded-lg font-bold shadow-lg cursor-pointer bg-[#5E78C1] w-72 h-31 text-5xl'
-        type="button"
-        value='Buscar'
-      />
-
+        <input
+          onClick={handleButtonClick}
+          className='flex items-center justify-center rounded-lg font-bold shadow-lg cursor-pointer bg-[#5E78C1] w-72 h-31 text-5xl'
+          type="button"
+          value='Buscar'
+        />
       </form>
     </FondoPrincipal>
+  );
+};
 
-  )
-}
-
-export default FormatoMov
+export default FormatoMov;

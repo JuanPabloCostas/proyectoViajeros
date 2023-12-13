@@ -14,8 +14,10 @@ function App() {
 
   return (
     <>
+      {/* Configuración de enrutamiento */}
       <Router>
         <Routes>
+          {/* Rutas de la aplicación */}
           <Route path="/" element={<Indice />} />
           <Route path="/formatomovilidad" element={<FormatoMov />} />
           <Route path="/resultados_mov" element={<Resultados_mov />} />
