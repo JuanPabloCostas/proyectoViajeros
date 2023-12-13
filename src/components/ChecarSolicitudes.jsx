@@ -51,9 +51,9 @@ export const ChecarSolicitudes = () => {
                         <>
                         {row.status == 0 && <tr>
                             <td>{row.expediente}</td>
-                            <td><a href={`http://localhost:8000/${row.file1}`} target="_blank"><img className='w-auto' src={img} alt="download" /></a></td>
-                            <td><a href={`http://localhost:8000/${row.file2}`} target="_blank"><img src={img} alt="download" /></a></td>
-                            <td><a href={`http://localhost:8000/${row.file3}`} target="_blank"><img src={img} alt="download" /></a></td>
+                            <td><a href={`https://olmos.blob.core.windows.net/files/${row.file1}`} target="_blank"><img className='w-auto' src={img} alt="download" /></a></td>
+                            <td><a href={`https://olmos.blob.core.windows.net/files/${row.file2}`} target="_blank"><img src={img} alt="download" /></a></td>
+                            <td><a href={`https://olmos.blob.core.windows.net/files/${row.file3}`} target="_blank"><img src={img} alt="download" /></a></td>
                             <td><button onClick={async(e) => {
                                 e.preventDefault();
                                 const response = await axios.put(`http://127.0.0.1:3000/solicitudes/status/${row.expediente}`, {status: 1});
