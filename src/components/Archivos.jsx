@@ -88,7 +88,7 @@ function Archivos({expediente}) {
                 name='file1'
                 id='file1'
                 type='file'
-                accept='.pdf'
+                // accept='.pdf'
                 onChange={handleFile1Change}
               />
             </td>
@@ -100,7 +100,7 @@ function Archivos({expediente}) {
                 name='file2'
                 id='file2'
                 type='file'
-                accept='.pdf'
+                // accept='.pdf'
                 onChange={handleFile2Change}
               />
             </td>
@@ -112,7 +112,7 @@ function Archivos({expediente}) {
                 name='file3'
                 id='file3'
                 type='file'
-                accept='.pdf'
+                // accept='.pdf'
                 onChange={handleFile3Change}
               />
             </td>

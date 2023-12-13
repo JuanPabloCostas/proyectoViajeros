@@ -65,11 +65,13 @@ export const ChecarSolicitudes = () => {
                         <td><button onClick={async(e) => {
                             e.preventDefault();
                             const response = await axios.put(`http://127.0.0.1:3000/solicitudes/status/${row.expediente}`, {status: 1});
+                            alert('Solicitud aceptada');
                             console.log(response);
                         }}>Aceptar</button></td>
                         <td><button onClick={async(e) => {
                             e.preventDefault();
                             const response = await axios.put(`http://127.0.0.1:3000/solicitudes/status/${row.expediente}`, {status: 2});
+                            alert('Solicitud rechazada');
                             console.log(response);
                         }}>Rechazar</button></td>
                     </tr>}
