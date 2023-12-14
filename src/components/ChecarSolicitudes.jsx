@@ -5,19 +5,36 @@ import img from './download-button.png'
 export const ChecarSolicitudes = () => {
     const [data, setdata] = useState([]);
 
-    useEffect(() => {
-        try {
-            const getData = async () => {
-                const response = await axios.get('http://127.0.0.1:3000/solicitudes');
-                console.log(response.data);
-                setdata(response.data);
-            }
-            getData();
 
+    const getData = async () => {
+        try {
+            const response = await axios.get('https://mauazureapp.azurewebsites.net/solicitudes');
+            console.log(response.data);
+            setdata(response.data);
         } catch (error) {
             console.error(error);
+            
         }
-    }, []);
+
+    }
+
+    useEffect(() => {
+        getData();
+    }, [])
+
+    // useEffect(() => {
+    //     try {
+    //         const getData = async () => {
+    //             const response = await axios.get('https://mauazureapp.azurewebsites.net/solicitudes');
+    //             console.log(response.data);
+    //             setdata(response.data);
+    //         }
+    //         getData();
+
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // }, []);
 
     return (
         <div className='w-screen flex flex-col justify-center items-center'>
@@ -42,30 +59,50 @@ export const ChecarSolicitudes = () => {
                         <th>Cuadro de Homologación</th>
                         <th>Certificado de Lengua</th>
                         <th>Carta de Razones</th>
-                        <th>Aceptar</th>
-                        <th>Rechazar</th>
+                        <th>Aceptar / Rechazar</th>
                     </tr>
                 </thead>
                 <tbody>
                     {data.map((row) => (
                         <>
-                        {row.status == 0 && <tr>
+                        {<tr>
                             <td>{row.expediente}</td>
                             <td className='text-center'><a href={`https://olmos.blob.core.windows.net/files/${row.file1}`} target="_blank"><img src={img} alt="download" className='mx-auto'/></a></td>
-                            <td className='text-center'><a href={`https://olmos.blob.core.windows.net/files/${row.file2}`} target="_blank"><img src={img} alt="download" className='mx-auto'/></a></td>
+                            <td className='text-center'><a href={`https://olmos.blob.core.windows.net/files/${row.file1}`} target="_blank"><img src={img} alt="download" className='mx-auto'/></a></td>
                             <td className='text-center'><a href={`https://olmos.blob.core.windows.net/files/${row.file3}`} target="_blank"><img src={img} alt="download" className='mx-auto'/></a></td>
-                            <td ><button className='rounded bg-lime-600 shadow-lg w-20' onClick={async(e) => {
+                            {row.status == 0 ? 
+                                <td className='flex justify-center gap-7'><button className='rounded bg-lime-600 shadow-lg w-20' onClick={async(e) => {
                                 e.preventDefault();
-                                const response = await axios.put(`http://127.0.0.1:3000/solicitudes/status/${row.expediente}`, {status: 1});
-                                alert('Solicitud aceptada');
-                                console.log(response);
-                            }}>Aceptar</button></td>
-                            <td><button className='rounded bg-red-600 shadow-lg w-20' onClick={async(e) => {
+                                try {
+                                    const response = await axios.put(`https://mauazureapp.azurewebsites.net/solicitudes/status/${row.expediente}`, {status: 1});
+                                    alert('Solicitud aceptada');
+                                    console.log(response);
+                                    // Reload data
+                                    getData();
+
+                                    
+                                } catch (error) {
+                                    console.log(error);
+                                }
+                                
+                            }}>Aceptar</button>
+                            <button className='rounded bg-red-600 shadow-lg w-20' onClick={async(e) => {
                                 e.preventDefault();
-                                const response = await axios.put(`http://127.0.0.1:3000/solicitudes/status/${row.expediente}`, {status: 2});
-                                alert('Solicitud rechazada');
-                                console.log(response);
+                                try {
+                                    const response = await axios.put(`https://mauazureapp.azurewebsites.net/solicitudes/status/${row.expediente}`, {status: 2});
+                                    alert('Solicitud rechazada');
+                                    console.log(response);
+                                    getData();
+                                    
+                                } catch (error) {
+                                    console.log(error);
+                                    
+                                }
+                                
                             }}>Rechazar</button></td>
+                            : row.status == 1 ? <td>Aceptada</td> : <td>Rechazada</td>
+                        }
+                            
                         </tr>}
                         </>
                     ))}

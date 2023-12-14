@@ -33,7 +33,7 @@ function Archivos({expediente}) {
     formData.append('file3', file3);
 
     try {
-      const response = await fetch(`http://127.0.0.1:3000/solicitudes/${expediente}`, {
+      const response = await fetch(`https://mauazureapp.azurewebsites.net/solicitudes/${expediente}`, {
         method: 'POST',
         body: formData,
       });
@@ -51,7 +51,7 @@ function Archivos({expediente}) {
   useEffect(() => {
     const checkIfFormSubmitted = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:3000/solicitudes/${expediente}`);
+        const response = await axios.get(`https://mauazureapp.azurewebsites.net/solicitudes/${expediente}`);
         console.log(response);
         
         if (response.data && show) {

@@ -10,7 +10,7 @@ function EstatusSolicitud({expediente}) {
     useEffect(() => {
       const checkIfFormSubmitted = async () => {
         try {
-          const response = await axios.get(`http://127.0.0.1:3000/solicitudes/${expediente}`);
+          const response = await axios.get(`https://mauazureapp.azurewebsites.net/solicitudes/${expediente}`);
           // console.log(response);
           if (response) {
             setstatus(response.data.status);

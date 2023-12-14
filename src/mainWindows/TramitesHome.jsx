@@ -5,7 +5,7 @@ import Archivos from '../components/Archivos';
 import EstatusSolicitud from '../components/EstatusSolicitud';
 
 // Define the TramitesHome component
-function TramitesHome({ usuario }) {
+function TramitesHome({ usuario, goLogin }) {
   // Define state for the active button
   const [activeButton, setActiveButton] = useState('bienvenida'); // Default to the Bienvenida component
 
@@ -17,7 +17,10 @@ function TramitesHome({ usuario }) {
   // Render the TramitesHome component
   return (
     <main className='bg-[#E1E1E2] h-screen w-screen overflow-hidden'>
-      <Navbar onButtonClick={handleButtonClick} />
+      <Navbar onButtonClick={handleButtonClick} goLogin={goLogin} />
+
+      <a href="/login" className='text-2xl font-bold text-blue-500 p-4'
+      >{"<- Regresar a login"}</a>
 
       {/* Render different components based on the active button */}
       {activeButton === 'bienvenida' && <Bienvenida usuario={usuario.usuario} />}

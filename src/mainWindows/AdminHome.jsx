@@ -16,6 +16,8 @@ export const MainHome = ({ usuario }) => {
   return (
     <main className='bg-[#E1E1E2] h-screen w-screen overflow-hidden'>
       <Navbar onButtonClick={handleButtonClick} />
+      <a href="/login" className='text-2xl font-bold text-blue-500 p-4'
+      >{"<- Regresar a login"}</a>
 
       {/* Renderizado condicional de los componentes */}
       {activeButton === 'bienvenida' && <Bienvenida usuario={usuario.usuario} />}

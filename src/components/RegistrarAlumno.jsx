@@ -14,7 +14,7 @@ export const RegistrarAlumno = () => {
     const handleSubmit = async () => {
         try {
             // Realizar una petición POST a la API para registrar al alumno
-            const response = await axios.post('http://127.0.0.1:3000/alumnos', alumno);
+            const response = await axios.post('https://mauazureapp.azurewebsites.net/login/registerAlumno', alumno);
             console.log(response);
             alert('Alumno registrado correctamente');
             // Reiniciar los valores del formulario
